@@ -1,0 +1,37 @@
+
+.custom-button {
+    width: 203px;
+    height: 46px;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+    display: flex;
+    align-items: center;
+    background: #004785;
+    border: 2px solid #004785;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-button .button-text {
+
+  height: 31px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  color: white;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+
+}
+.custom-button .down-chevron-icon {
+  display: none;
+  width: 24px;
+  height: 24px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
