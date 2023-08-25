@@ -1,0 +1,22 @@
+*{
+    background-color: #004785;
+    max-width: 830px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginContainer, .pass, .username{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pass, .username{
+    gap:10px;
+}
+ .custominput{
+    background-color: white;
+    border-radius: 10px;
+    height: 4vh;
+}
