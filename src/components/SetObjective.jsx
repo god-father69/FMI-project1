@@ -32,7 +32,7 @@ function SetObjective(props) {
   return (
     <>
       <div className="objContainer">
-        <div className="innercont">
+        <div className="innercont1">
             <div className="btnContainer">
                 <div className="statusbtn">
                     <CustomButton txt="Activate" style={{width:"35vw" , margin:"10px" , fontSize: "20px"}}/>
@@ -42,7 +42,7 @@ function SetObjective(props) {
 
                 </div>
             </div>
-        </div>
+        
         <div className="innercont">
             <div className="subincont objtext">
                 <p> How many objectives would you like to set?</p>
@@ -65,6 +65,7 @@ function SetObjective(props) {
                 {/* <MinusButton backgroundImage={upload}/> */}
                 {/* <button style={{ backgroundImage: {plusbtn}}}></button> */}
             </div>
+        </div>
         </div>
       </div>
     </>
