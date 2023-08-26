@@ -73,8 +73,9 @@ export default function ScavHuntLogin() {
         className="logo"
         style={{
           display: "flex",
-          justifyContent: "center",
-          marginTop: "10vh ",
+          /* justify-content: center; */
+          height: "100%",
+          marginTop: "12vh",
         }}
       >
         <img src={mdalogo} alt="" />
