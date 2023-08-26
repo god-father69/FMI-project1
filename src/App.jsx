@@ -6,22 +6,22 @@ import ScavHuntUpload from './components/ScavHuntUpload'
 import CustomButton from './assets/Custombutton'
 import UploadButton from './assets/UploadButton'
 import upload from './assets/upload.svg'
-import ProgIndex from './components/progress/ProgIndex'
-import ObjectiveBox from './components/progress/ObjectiveBox'
+import SetObjective from './components/SetObjective'
+import ObjectiveBox from './components/ObjectiveBox'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
       {/* <InstructorParent/> */}
-    {/* <ScavHuntLogin/> */}
-    {/* <ProgIndex/> */}
-    {/* <ObjectiveBox/> */}
       {/* <CustomButton txt="LOGIN"/> */}
       {/* <UploadButton backgroundImage={upload}/> */}
       <ScavHuntLogin/>
       {/* <ScavHuntMain />   */}
       {/* <ScavHuntUpload /> */}
+      {/* <ScavHuntLogin/> */}
+      <SetObjective/>
+      {/* <ObjectiveBox/> */}
     </>
   )
 }

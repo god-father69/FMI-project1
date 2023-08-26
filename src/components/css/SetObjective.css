@@ -1,0 +1,105 @@
+.objContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    /* position: relative;
+    top: 20vh; */
+    /* position: relative; */
+    /* width: 150px; */
+}
+
+.btnContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.statusbtn{
+    padding: 10px;
+}
+
+.innercont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2px;
+    /* width: 100%; */
+}
+
+.subincont{
+   
+}
+.objtext{
+    flex: 0 0 50%;
+}
+
+.countericon{
+    flex: 0 0 20%;
+    justify-content: center;
+    align-items: center;
+}
+.counter{
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    color: #004785;
+    width: 57px;
+    height: 42px;
+    background-color: white;
+    font-size: 25px;
+    font-weight: 200;
+    text-align: center;
+    /* margin: 15px; */
+    /* padding: 2px; */
+}
+
+.plusicon{
+    text-align: center;
+    flex: 0 0 15%;
+}
+.plusbtn{
+    border-radius: 100%;
+    border: #004785;
+    height: 34px;
+    width: 34px;
+    font-size: large;
+    font-weight: 100;
+    /* border-left: black; */
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+.minusicon{
+    text-align: center; 
+     flex: 0 0 15%;
+    
+}
+.minusbtn{
+    border-radius: 100%;
+    border: #004785;
+    height: 34px;
+    width: 34px;
+    font-size: large;
+    font-weight: 100;
+    /* border-left: black; */
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+/* .upbtn {
+    display: flex;
+    position: absolute;
+    height: 34px;
+    border-radius: 100%;
+    background: #004785;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+} */
+
+/* .uploadIcon {
+  position: absolute;
+  left: 26.47%;
+  right: 26.47%;
+  top: 26.47%;
+  bottom: 26.47%;
+  background-size: cover;
+} */

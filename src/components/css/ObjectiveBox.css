@@ -1,0 +1,79 @@
+.objectiveBoxCont{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.objectiveBoxInCont{
+
+}
+.objheadingtext{
+    /* display: flex; */
+    align-items: flex-start;
+    width: 100%;
+    left: 0px;
+    position: relative;
+    padding: 5px;
+    font-size: large;
+
+}
+.objHeading{
+    display: flex;
+    position: relative;
+    left: 0px;
+    align-items: flex-start;
+    width: 100%;
+}
+.objTextBox{
+    width: 100%;
+
+}
+
+.objtextboxarea,objtextboxpreview {
+    width: 100%;
+  height: 81px;
+  border: none;
+  background-color: white;
+  font-size: 16px;
+  resize: none;
+  padding: 5px;
+  color: #004785;
+  border-radius: 8px;
+}
+
+.objBtns{
+    display: flex;
+    flex-direction: row;
+    /* align-items: flex-start; */
+    justify-content: flex-start;
+    width: 100%;
+    /* position: relative;*/
+}
+.objbtn{
+    /* position: relative; */
+    display: flex;
+    /* width: 0%; */
+    flex: 0 0 25%;
+    left: 0px;
+    margin: 0px;
+    /* margin-right: 10px;*/
+}
+.savebtnCont{
+    /* flex: 0 0 50%; */
+    display: flex;
+    flex-direction: row-reverse;
+
+    
+}
+.savebtn{
+    display: flex;
+    margin-right: 0px;
+    border-radius: 100%;
+    border: #004785;
+    height: 34px;
+    width: 34px;
+    font-size: large;
+    font-weight: 100;
+    /* border-left: black; */
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
