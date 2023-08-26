@@ -20,8 +20,8 @@ function App() {
       {/* <ScavHuntMain />   */}
       {/* <ScavHuntUpload /> */}
       {/* <ScavHuntLogin/> */}
-      {/* <SetObjective/> */}
-      <ObjectiveBox/>
+      <SetObjective/>
+      {/* <ObjectiveBox/> */}
     </>
   )
 }
