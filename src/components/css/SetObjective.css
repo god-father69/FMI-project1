@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     margin: 5px;
-    /* position: relative;
-    top: 20vh; */
+    position: relative;
+    top: 22vh;
     /* position: relative; */
     /* width: 150px; */
 }
@@ -31,6 +31,10 @@
 }
 .objtext{
     flex: 0 0 50%;
+    font-size: 18px;
+    font-family: "Nunito";
+    /* margin-right: 0;
+    padding-left: 10px; */
 }
 
 .countericon{

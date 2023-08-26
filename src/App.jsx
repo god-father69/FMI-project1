@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      {/* <InstructorParent/> */}
+      <InstructorParent/>
       {/* <CustomButton txt="LOGIN"/> */}
       {/* <UploadButton backgroundImage={upload}/> */}
       {/* <ScavHuntLogin/> */}
@@ -22,8 +22,7 @@ function App() {
       {/* <ScavHuntUpload /> */}
       {/* <ScavHuntLogin/> */}
       {/* <SetObjective/> */}
-      {/* <ObjectiveBox1/> */}
-      {/* <OverallProg/> */}
+      {/* <ObjectiveBox/> */}
     </>
   )
 }

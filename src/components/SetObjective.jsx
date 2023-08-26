@@ -31,10 +31,10 @@ function SetObjective() {
         <div className="innercont">
             <div className="btnContainer">
                 <div className="statusbtn">
-                    <CustomButton txt="Activate"/>
+                    <CustomButton txt="Activate" style={{width:"35vw" , margin:"10px" , fontSize: "20px"}}/>
                 </div>
                 <div className="statusbtn">
-                    <CustomButton txt="Deactivate"/>
+                    <CustomButton txt="Deactivate" style={{width:"35vw" , margin:"10px" , fontSize: "20px"}}/>
 
                 </div>
             </div>
