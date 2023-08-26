@@ -23,11 +23,14 @@ export default function InstructorParent() {
                     <CustomButton txt="PROGRESS" style={{width:"35vw" , margin:"10px" , fontSize: "20px"}}/>
                 </div>
             </div>
-            <hr style={{border : "2px solid  #fff" , margin : "20px" , position : "fixed" , left :"0" , right:"0" , top:"20vh" }}/>
+            <hr style={{border : "1.5px solid  #fff" , margin : "20px" , position : "fixed" , left :"0" , right:"0" , top:"18vh" }}/>
             {/* {{adminClicked} && <SetObjective/>} */}
             {
                 !adminClicked ? "" : <SetObjective/>
             }
+
+            <hr style={{border : "1.5px solid  #fff" , margin : "20px" , position : "fixed" , left :"0" , right:"0" , top:"42vh" }}/>
+            
             {/* {
                 !adminClicked ? "" : <ObjectiveBox/>
             } */}
