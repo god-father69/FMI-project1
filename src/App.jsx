@@ -16,10 +16,10 @@ function App() {
       {/* <InstructorParent/> */}
     {/* <ScavHuntLogin/> */}
     {/* <ProgIndex/> */}
-    <ObjectiveBox/>
+    {/* <ObjectiveBox/> */}
       {/* <CustomButton txt="LOGIN"/> */}
       {/* <UploadButton backgroundImage={upload}/> */}
-      {/* <ScavHuntLogin/> */}
+      <ScavHuntLogin/>
       {/* <ScavHuntMain />   */}
       {/* <ScavHuntUpload /> */}
     </>
