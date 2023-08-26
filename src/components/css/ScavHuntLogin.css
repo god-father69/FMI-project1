@@ -1,11 +1,3 @@
-*{
-    background-color: #004785;
-    max-width: 830px;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-}
-
 .loginContainer, .pass, .username{
     display: flex;
     flex-direction: column;
