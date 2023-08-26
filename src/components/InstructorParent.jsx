@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import fingerprint from "../assets/fingerprint.svg";
 import './css/InstructorParent.css'
 import CustomButton from '../assets/Custombutton'
+import SetObjective from './SetObjective'
 export default function InstructorParent() {
 
   return (
@@ -18,6 +19,7 @@ export default function InstructorParent() {
                 <CustomButton txt="PROGRESS" style={{width:"30vw" , margin:"10px"}}/>
             </div>
         </div>
+        {/* <SetObjective/> */}
     </div>
   );
 }
