@@ -23,7 +23,7 @@ export default function ScavHuntLogin() {
     }));
   };
   return (
-    <div style={{display:"flex", flexDirection:"column",gap:"10px"}}>
+    <div style={{display:"flex", flexDirection:"column",gap:"10px", paddingTop: "10vh"}}>
       <div className="loginContainer">
         <div className="fngrprintLogo" style={{marginBottom:"15px"}}>
           <img src={fingerprint} alt="" />
@@ -59,7 +59,7 @@ export default function ScavHuntLogin() {
           </form>
         </div>
       </div>
-      <div className="logo" style={{display:"flex",marginTop:"140px"}}>
+      <div className="logo" style={{display:"flex", justifyContent: "center", marginTop:"10vh "}}>
         <img src={mdalogo} alt="" />
       </div>
     </div>
