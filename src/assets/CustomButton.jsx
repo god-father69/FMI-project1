@@ -4,6 +4,7 @@ const CustomButton = (props) => {
   return (
     <button
       className="custom-button"
+      style={props.style}
       onClick={() => {
         // Add your button click logic here
       }}

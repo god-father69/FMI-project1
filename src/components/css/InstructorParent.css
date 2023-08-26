@@ -1,0 +1,61 @@
+*{
+    background-color: #004785;
+    max-width: 830px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.mainPageCont{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.upperPageContent{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items:center;
+    top: 3vh;
+    left: 8vw;
+}
+
+.instructorText{
+    position:fixed; 
+    right : 13vw;
+    top : 2vh;
+}
+
+.lowerPageContent{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    top : 13vh;
+    left :15vw;
+}
+
+.pass, .username{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pass, .username{
+    gap:10px;
+}
+.custominput{
+    background-color: white;
+    border-radius: 10px;
+    height: 4vh;
+}
+
+.fngrprintLogoInstructor{
+    height: 8vh;
+    width: 8vh;
+}
