@@ -33,14 +33,15 @@ function OverallProg() {
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        width: "80%",
+        width: "90%",
         // background:"pink",
         justifyContent: "flex-start",
+        // position: "relative"
       }}
     >
       <div className="objHeader" style={{ color: "white", width: "100%" }}>
         <p
-          style={{ fontWeight: "500", fontSize: "17px", fontFamily: "nunito" }}
+          style={{ fontWeight: "500", fontSize: "17px", fontFamily: "nunito",marginLeft:"15px" }}
         >
           OVERALL PROGRESS
         </p>
@@ -60,10 +61,11 @@ function OverallProg() {
               style={{
                 display: "flex",
                 flexDirection: "row",
+                alignItems:"center",
                 justifyContent: "space-between",
                 background: "white",
                 margin: "10px",
-                width: "100%",
+                width: "95%",
                 borderRadius: "10px",
                 height: "37px",
                 fontWeight: "700",
@@ -91,6 +93,7 @@ function OverallProg() {
                   width: "36%",
                   background: "white",
                   margin: "10px",
+                  alignItems: "center"
                 }}
               >
                 {console.log(item[1],"itemm")}
@@ -101,8 +104,9 @@ function OverallProg() {
                       style={{
                         background: "white",
                         display: "flex",
+                        alignItems: "center",
                         flexDirection: "row",
-                        paddingRight: "20px",
+                        // paddingRight: "20px",
                       }}
                     >
                       <p
@@ -111,6 +115,7 @@ function OverallProg() {
                           background: "white",
                           margin: "4px",
                           fontFamily: "nunito",
+                          
                         }}
                       >
                         {val.filesUploaded}
@@ -124,6 +129,7 @@ function OverallProg() {
                         background: "white",
                         color: "green",
                         height: "34px",
+                        alignItems: "center",
                         //   cursor: "pointer",
                         justifyContent: "center",
                       }}
@@ -140,6 +146,7 @@ function OverallProg() {
                         height: "34px",
                         // cursor: "pointer",
                         justifyContent: "center",
+                        alignItems: "center"
                       }}
                     >
                       close

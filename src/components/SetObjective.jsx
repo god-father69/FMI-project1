@@ -8,18 +8,22 @@ import minusbtn from '../assets/minus.svg'
 import upload from '../assets/upload.svg'
 
 
-function SetObjective() {
+function SetObjective(props) {
+    const {setobjCount}=props;
     const [count, setCount] = useState(0);
     const increment = () => {
         setCount(count + 1);
+        setobjCount(count + 1);
     };
 
     const decrement = () => {
         if(count<=0){
             setCount(0);
+            setobjCount(1);
         }
         else{
             setCount(count - 1);
+            setobjCount(count - 1);
 
         }
     };

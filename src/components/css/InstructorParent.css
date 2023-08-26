@@ -28,7 +28,7 @@
     justify-content:space-around;
     align-items: center;
     top : 13vh;
-    left :10vw;
+    left :16vw;
 }
 
 .pass, .username{
@@ -49,4 +49,14 @@
 .fngrprintLogoInstructor{
     height: 8vh;
     width: 8vh;
+}
+.progressSec{
+    display: flex;
+    margin-top: 23vh;
+    /* height: 100%; */
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
