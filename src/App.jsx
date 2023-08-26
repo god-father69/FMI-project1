@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import ScavHuntLogin from './components/ScavHuntLogin'
+import InstructorParent from './components/InstructorParent'
 import ScavHuntMain from './components/ScavHuntMain'
 import ScavHuntUpload from './components/ScavHuntUpload'
 import CustomButton from './assets/Custombutton'
@@ -10,6 +11,7 @@ function App() {
 
   return (
     <>
+      {/* <InstructorParent/> */}
       {/* <CustomButton txt="LOGIN"/> */}
       {/* <UploadButton backgroundImage={upload}/> */}
       {/* <ScavHuntLogin/> */}
