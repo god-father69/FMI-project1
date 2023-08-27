@@ -1,8 +1,11 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import fingerprint from "../assets/fingerprint.svg";
 import CustomButton from "../assets/Custombutton";
 import mdalogo from "../assets/mdalogo.svg";
 import "./css/ScavHuntLogin.css";
+
+
 export default function ScavHuntLogin() {
   const [formData, setFormData] = useState({
     username: "",
@@ -13,6 +16,9 @@ export default function ScavHuntLogin() {
     event.preventDefault();
     console.log("Form data submitted:", formData);
     // You can perform further actions, such as sending the data to a server
+
+    // Redirect to home page after form submission
+    window.location.href = "/home";
   };
 
   const handleInputChange = (event) => {

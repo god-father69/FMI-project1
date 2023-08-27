@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styles from './css/Objective.module.css'
 import Upload from '../assets/upload.svg'
 import Tick from '../assets/tick.svg'
@@ -13,11 +14,13 @@ function Objective({number, summary}) {
         <textarea className={styles.objectiveTextarea}></textarea>
         <div className={styles.uploadContainer}>
             <div className={styles.uploadRow}>
-                <input id={`file-upload${number}`} type='file' style={{display: "none"}} />
+                {/* <input id={`file-upload${number}`} type='file' style={{display: "none"}} /> */}
                 <label htmlFor={`file-upload${number}`} >
-                    <div className={styles.customButton}>
-                        <img src = {Upload} alt="upload-logo"/>
-                    </div>
+                    <Link to="/upload" >
+                        <div className={styles.customButton}>
+                            <img src = {Upload} alt="upload-logo"/>
+                        </div>
+                    </Link>
                 </label>
                 <span>No assets uploaded</span>
             </div>
