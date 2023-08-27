@@ -5,7 +5,6 @@ import CustomButton from "../assets/Custombutton";
 import mdalogo from "../assets/mdalogo.svg";
 import "./css/ScavHuntLogin.css";
 
-
 export default function ScavHuntLogin() {
   const [formData, setFormData] = useState({
     username: "",
@@ -18,7 +17,7 @@ export default function ScavHuntLogin() {
     // You can perform further actions, such as sending the data to a server
 
     // Redirect to home page after form submission
-    window.location.href = "/home";
+    // window.location.href = "/home";
   };
 
   const handleInputChange = (event) => {
@@ -69,10 +68,18 @@ export default function ScavHuntLogin() {
                 onChange={handleInputChange}
               />
             </div>
-            <div className="submitBtn" style={{ marginTop: "50px",marginTop: "50px",
-    display: "flex",
-    justifyContent: "space-around "}}>
-              <CustomButton txt="LOGIN" style={{ width: "8em" }} />
+            <div
+              className="submitBtn"
+              style={{
+                marginTop: "50px",
+                marginTop: "50px",
+                display: "flex",
+                justifyContent: "space-around ", 
+              }}
+            >
+              <Link to="/home">
+                <CustomButton txt="LOGIN" style={{ width: "8em" }} />
+              </Link>
             </div>
           </form>
         </div>
@@ -81,7 +88,7 @@ export default function ScavHuntLogin() {
         className="logo"
         style={{
           display: "flex",
-          justifyContent:"space-around",
+          justifyContent: "space-around",
           height: "100%",
           marginTop: "12vh",
         }}
