@@ -5,6 +5,7 @@ export default function ProgIndex() {
   return (
     <div>
       <InstructorParent/>
+      
     </div>
   )
 }
