@@ -38,14 +38,14 @@ export default function ScavHuntLogin() {
         <div className="formdata">
           <form onSubmit={handleSubmit}>
             <div className="username">
-              <label htmlFor="Username" style={{ margin: "7px" }}>
+              <label htmlFor="username" style={{ margin: "7px" }}>
                 Username:
               </label>
               <input
                 type="text"
                 className="custominput"
-                id="Usrname"
-                name="Username"
+                id="username"
+                name="username"
                 value={formData.username}
                 onChange={handleInputChange}
               />
@@ -57,14 +57,16 @@ export default function ScavHuntLogin() {
               <input
                 type="password"
                 className="custominput"
-                id="pswrd"
+                id="password"
                 name="password"
                 value={formData.password}
                 onChange={handleInputChange}
               />
             </div>
-            <div className="submitBtn" style={{ marginTop: "50px" }}>
-              <CustomButton txt="LOGIN" style={{ width: "1em" }} />
+            <div className="submitBtn" style={{ marginTop: "50px",marginTop: "50px",
+    display: "flex",
+    justifyContent: "space-around "}}>
+              <CustomButton txt="LOGIN" style={{ width: "8em" }} />
             </div>
           </form>
         </div>
@@ -73,7 +75,7 @@ export default function ScavHuntLogin() {
         className="logo"
         style={{
           display: "flex",
-          /* justify-content: center; */
+          justifyContent:"space-around",
           height: "100%",
           marginTop: "12vh",
         }}

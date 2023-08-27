@@ -19,11 +19,10 @@ function App() {
 
   return (
     <>
-      <InstructorParent/>
-      <InstructorParent/> 
+      {/* <InstructorParent/> */}
       {/* <CustomButton txt="LOGIN"/> */}
       {/* <UploadButton backgroundImage={upload}/> */}
-      {/* <ScavHuntLogin/> */}
+      <ScavHuntLogin/>
       {/* <ScavHuntMain />  */}
       {/* <ScavHuntNotes /> */}
       {/* <ScavHuntUpload /> */}
