@@ -1,0 +1,101 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 4vh 6vw;
+}
+
+.mainHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fingerprint {
+    height: 8vh;
+}
+
+.mainHeaderRightTop {
+    display: flex;
+    justify-content: center;
+}
+
+.mainHeaderRightTop > p {
+    font-size: 1.1rem;
+    margin: 0 0 1vh 0;
+}
+
+.mainHeaderRightBottom {
+    display: flex;
+    gap: 10px;
+}   
+
+.customButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    width: 36px;    
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.customButton > img {
+    height: 1.3rem;
+}
+
+.mainBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+    margin-top: 4vh; 
+}
+
+.uploadLogo {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+
+}
+
+.browseButton {
+    text-align: center;
+    width: 40vw;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 2vh;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.assetsBox {
+    margin-top: 3vh;
+    height: 20vh;
+    width: 60vw;
+    border-radius: 5px;
+    color: #004785;
+    text-align: center;
+    padding: 12px;
+    font-weight: 600;
+    background-color: #F3F3F3;
+}
+
+.reloadButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.reloadButtonImg {
+    height: 2.4rem;
+}

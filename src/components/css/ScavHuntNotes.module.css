@@ -1,10 +1,10 @@
-.main-container {
+.mainContainer {
     display: flex;
     flex-direction: column;
     padding: 4vh 6vw;
 }
 
-.main-header {
+.mainHeader {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -14,80 +14,82 @@
     height: 8vh;
 }
 
-.main-header-right-top {
+.mainHeaderRightTop {
     display: flex;
     justify-content: center;
 }
 
-.main-header-right-top > p {
+.mainHeaderRightTop > p {
     font-size: 1.1rem;
     margin: 0 0 1vh 0;
 }
 
-.main-header-right-bottom {
+.mainHeaderRightBottom {
     display: flex;
     gap: 10px;
 }   
 
-.custom-button {
+.customButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 36px;
     width: 36px;    
     border-radius: 50%;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-.custom-button > img {
+.customButtonImg {
     height: 1.3rem;
 }
 
-.main-body {
+.mainBody {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     gap: 1vh;
-    margin-top: 4vh; 
+    margin-top: 2vh; 
 }
 
-.upload-logo {
+.customButtonNotes {
     display: flex;
     justify-content: center;
-    height: 60px;
-    width: 60px;
+    align-items: center;
     border-radius: 50%;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     padding: 20px;
-
 }
 
-.browse-button {
-    text-align: center;
-    width: 40vw;
-    padding: 8px 12px;
-    border-radius: 6px;
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-top: 2vh;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+.notesImg {
+    height: 2.5rem;
 }
 
-.assets-box {
-    margin-top: 3vh;
-    height: 20vh;
-    width: 60vw;
+.heading {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.assetsBox {
+    height: 50vh;
+    width: 80vw;
     border-radius: 5px;
     color: #004785;
-    text-align: center;
+    font-size: 1.1rem;
     padding: 12px;
     font-weight: 600;
     background-color: #F3F3F3;
 }
 
-.reload-button {
+.reloadButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 2vh;
-    height: 4rem;
-    width: 4rem;
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-.reload-button > img {
-    height: 2.4rem;
+.reloadButtonImg {
+    height: 2rem;
 }

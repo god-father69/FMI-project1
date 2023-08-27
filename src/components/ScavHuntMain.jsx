@@ -1,4 +1,4 @@
-import './css/ScavHuntMain.css'
+import styles from './css/ScavHuntMain.module.css'
 import Objective from './Objective'
 import Fingerprint from '../assets/fingerprint.svg'
 import Question from '../assets/question.svg'
@@ -6,26 +6,26 @@ import Notes from '../assets/notes.svg'
 
 function ScavHuntMain() {
   return (
-    <div className="main-container">
-        <div className="main-header">
-            <div className="main-header-left">
-                <img src={Fingerprint} alt="fingerprint-logo" className="fingerprint"/>
+    <div className={styles.mainContainer}>
+        <div className={styles.mainHeader}>
+            <div className={styles.mainHeaderLeft}>
+                <img src={Fingerprint} alt="fingerprint-logo" className={styles.fingerprint} />
             </div>
-            <div className="main-header-right">
-                <div className='main-header-right-top'>
+            <div className={styles.mainHeaderRight}>
+                <div className={styles.mainHeaderRightTop}>
                     <p>TEAM 01</p>
                 </div>
-                <div className='main-header-right-bottom'>
-                    <div className='custom-button notes-button'>
-                        <img src = {Notes} alt="notes-logo" className="notes"/>
+                <div className={styles.mainHeaderRightBottom}>
+                    <div className={styles.customButton}>
+                        <img src = {Notes} alt="notes-logo" />
                     </div>
-                    <div className='custom-button question-button'>
-                        <img src = {Question} alt="question-logo" className="question"/>
+                    <div className={styles.customButton}>
+                        <img src = {Question} alt="question-logo" />
                     </div>
                 </div>
             </div>
         </div>
-        <div className="main-body">
+        <div className={styles.mainBody}>
             <Objective 
                 number='1'
                 summary = 'This is objective one...'

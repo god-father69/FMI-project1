@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
 :root {
   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
   line-height: 1.5;
@@ -17,6 +19,7 @@
 *{
   background-color: #004785;
   max-width: 830px;
+  font-family: 'Nunito', sans-serif;
 }
 
 body {

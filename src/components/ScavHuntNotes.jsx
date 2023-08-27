@@ -1,11 +1,18 @@
-import styles from './css/ScavHuntUpload.module.css'
+import { useState } from 'react'
+import styles from './css/ScavHuntNotes.module.css'
 import Fingerprint from '../assets/fingerprint.svg'
 import Question from '../assets/question.svg'
 import Notes from '../assets/notes.svg'
-import Upload from '../assets/upload.svg'
 import Reload from '../assets/reload.svg'
 
-function ScavHuntUpload() {
+
+function ScavHuntMain() {
+    const [noteText, setNoteText] = useState('')
+
+    const handleReload = () => {
+        setNoteText('')
+    }
+
   return (
     <div className={styles.mainContainer}>
         <div className={styles.mainHeader}>
@@ -17,30 +24,25 @@ function ScavHuntUpload() {
                     <p>TEAM 01</p>
                 </div>
                 <div className={styles.mainHeaderRightBottom}>
-                    <div className={styles.customButton}>
-                        <img src = {Notes} alt="notes-logo" />
+                    <div className={styles.customButton} style={{visibility: 'hidden'}}>
+                        <img src = {Notes} alt="notes-logo" className={styles.customButtonImg} />
                     </div>
                     <div className={styles.customButton}>
-                        <img src = {Question} alt="question-logo" />
+                        <img src = {Question} alt="question-logo" className={styles.customButtonImg} />
                     </div>
                 </div>
             </div>
         </div>
         <div className={styles.mainBody}>
-            <div className={styles.uploadLogo}>
-                <img src = {Upload} alt="upload-logo" />  
+            <div className={styles.customButtonNotes} >
+                <img src={Notes} alt="notes-logo" className={styles.notesImg} />
             </div>
-            <span>Upload an asset for objective one. </span>
-            <input id="browse" type='file' style={{display: "none"}} />
-            <label htmlFor="browse" >
-                <div className={styles.browseButton}>
-                    BROWSE
-                </div>
-            </label>
-            <div className={styles.assetsBox}>
-                Uploaded assets
-            </div>
-            <div className={styles.reloadButton} onClick={() => window.location.reload()}>
+            <span className={styles.heading}>Notes</span>
+            <textarea className={styles.assetsBox}
+                value={noteText}
+                onChange={(e) => setNoteText(e.target.value)}
+            />
+            <div className={styles.reloadButton} onClick={handleReload}>
                 <img src = {Reload} alt="reload-logo" className={styles.reloadButtonImg}/>
             </div>
         </div>
@@ -48,4 +50,4 @@ function ScavHuntUpload() {
   )
 }
 
-export default ScavHuntUpload
+export default ScavHuntMain
