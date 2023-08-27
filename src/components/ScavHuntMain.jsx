@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styles from './css/ScavHuntMain.module.css'
 import Objective from './Objective'
 import Fingerprint from '../assets/fingerprint.svg'
@@ -16,9 +17,11 @@ function ScavHuntMain() {
                     <p>TEAM 01</p>
                 </div>
                 <div className={styles.mainHeaderRightBottom}>
-                    <div className={styles.customButton}>
-                        <img src = {Notes} alt="notes-logo" />
-                    </div>
+                    <Link to="/notes" >
+                        <div className={styles.customButton}>
+                            <img src = {Notes} alt="notes-logo" />
+                        </div>
+                    </Link>
                     <div className={styles.customButton}>
                         <img src = {Question} alt="question-logo" />
                     </div>

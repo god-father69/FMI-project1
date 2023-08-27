@@ -81,7 +81,7 @@
     color: #004785;
     text-align: center;
     padding: 12px;
-    font-weight: 600;
+    font-weight: 700;
     background-color: #F3F3F3;
 }
 
@@ -98,4 +98,12 @@
 
 .reloadButtonImg {
     height: 2.4rem;
+}
+
+.uploadList {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    margin-top: 2vh;
+    color: white;
 }
