@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import uploadIcon from "../../assets/upload2.svg";
 import tick from "../../assets/tick.svg";
 import cross from "../../assets/cross.svg";
 import "./obj.css";
 function ObjectiveBox1(props) {
   const { objCount } = props;
-
+  const [objCount1,setObjCount1]=useState(1);
+  useEffect(() => {
+    setObjCount1(objCount);
+  },[]);
   const teamcount = {
     team1: {
       filesUploaded: "01",
