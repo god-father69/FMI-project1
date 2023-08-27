@@ -16,7 +16,7 @@ export default function InstructorParent() {
     }
     return (
         <div style={{background:"#004785"}}>
-            <div className="mainPageContent" style={{position:"fixed",zIndex:"100",background:"black"}}>
+            <div className="mainPageContent" style={{position:"fixed",zIndex:"100",background:"#004785"}}>
                 <div className="upperPageContent">
                     <div className="fngrprintLogoInstructorParent">
                         <img src={fingerprint} alt="" className="fngrprintLogoInstructor"></img>
