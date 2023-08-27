@@ -16,7 +16,7 @@ export default function InstructorParent() {
     }
     return (
         <div style={{background:"#004785"}}>
-            <div className="mainPageContent">
+            <div className="mainPageContent" style={{position:"fixed",zIndex:"100",background:"#004785"}}>
                 <div className="upperPageContent">
                     <div className="fngrprintLogoInstructorParent">
                         <img src={fingerprint} alt="" className="fngrprintLogoInstructor"></img>
@@ -30,16 +30,13 @@ export default function InstructorParent() {
             </div>
             {/* <hr style={{border : "1.5px solid  #fff" , margin : "20px" , position : "fixed" , left :"0" , right:"0" , top:"18vh" }}/> */}
             {/* {{adminClicked} && <SetObjective/>} */}
+            <div className="childsss" style={{overflow : "scroll",zIndex:"-5"}}>
+
+            
             {
-                adminClicked==1 && <SetObjective setobjCount={setobjCount} />
+                adminClicked==1 && <SetObjective setobjCount={setobjCount} objCount={objCount} />
             }
-            
-            
-            
-            
-            {/* {
-                !adminClicked ? "" : <ObjectiveBox/>
-            } */}
+    
 
             {adminClicked==2 && (
                 <div className="progressSec" >
@@ -50,6 +47,7 @@ export default function InstructorParent() {
                     <ObjectiveBox1 objCount={objCount} />
                 </div>
             ) }
+            </div>
         </div>
     );
 }

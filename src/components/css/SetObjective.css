@@ -36,9 +36,13 @@
     flex: 0 0 50%;
     font-size: 18px;
     font-family: "Nunito";
+    padding: 5px;
     /* margin-right: 0;
     padding-left: 10px; */
 }
+/* .objtext p{
+    
+} */
 
 .countericon{
     flex: 0 0 20%;

@@ -11,8 +11,8 @@ import RenderObjBox from "./renderObjBox"
 
 
 function SetObjective(props) {
-    const {setobjCount}=props;
-    const [count, setCount] = useState(0);
+    const {setobjCount,objCount}=props;
+    const [count, setCount] = useState(objCount);
     const increment = () => {
         setCount(count + 1);
         setobjCount(count + 1);
