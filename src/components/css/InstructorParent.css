@@ -1,34 +1,43 @@
-.mainPageCont{
+.mainPageContent{
+    /* position: relative; */
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
+    /* justify-content:flex-start; */
     align-items: center;
+    background: #004785;
+    
+    width: 100%;
+    z-index: 10;
 }
 
 .upperPageContent{
-    position: fixed;
+    /* position: fixed; */
+    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content:flex-start;
     align-items:center;
     top: 3vh;
     left: 8vw;
+    /* z-index: 10; */
 }
 
 .instructorText{
-    position:fixed; 
-    right : 13vw;
+    position:absolute; 
+    left : 60vw;
     top : 2vh;
 }
 
 .lowerPageContent{
-    position: fixed;
+    position: absolute;
+    /* position: fixed; */
     display: flex;
     flex-direction: row;
     justify-content:space-around;
     align-items: center;
     top : 13vh;
     left :16vw;
+    
 }
 
 .pass, .username{

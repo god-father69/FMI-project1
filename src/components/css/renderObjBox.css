@@ -1,4 +1,6 @@
 .setOfObjectiveBox{
-    position: absolute;
-    top : 40vh;
+    position: relative;
+    /* top : 40vh; */
+    margin-top: 22vh;
+    margin-right: 40px;
 }

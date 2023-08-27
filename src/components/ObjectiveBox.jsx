@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import CustomButton from "../assets/Custombutton";
+import tick from "../assets/tick.svg";
 import './css/ObjectiveBox.css'
 
 
@@ -42,16 +43,16 @@ function ObjectiveBox() {
         </div>
         <div className="objBtns objectiveBoxInCont">
               <div className="objbtn" onClick={handleEdit}>
-                <CustomButton txt="EDIT"/>
+                <CustomButton txt="EDIT" style={{width:"20vw" , margin:"10px" , fontSize: "20px"}}/>
               </div>
               <div className="objbtn" onClick={handleDelete}>
-                <CustomButton txt="DELETE" />
+                <CustomButton txt="DELETE" style={{width:"20vw" , margin:"10px" , fontSize: "20px"}}/>
 
               </div>
               <div className="savebtnCont" onClick={handleSave}>
                 {/* <CustomButton txt="DELETE" /> */}
-                <button className="savebtn">
-                    -
+                <button className="savebtn ">
+                <img src={tick} alt="" style={{position:"absolute", top:"10px"}}></img>
                 </button>
 
               </div>

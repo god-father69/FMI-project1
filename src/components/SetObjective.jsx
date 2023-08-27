@@ -33,15 +33,15 @@ function SetObjective(props) {
 
   return (
     <>
-    <hr style={{border : "1.5px solid  #fff" , margin : "20px" , position : "fixed" , left :"0" , right:"0" , top:"18vh" }}/>
+    <hr style={{border : "1.5px solid  #fff" , margin : "20px" , position : "absolute" , left :"0" , right:"0" , top:"18vh" }}/>
       <div className="objContainer">
         <div className="innercont1">
             <div className="btnContainer">
                 <div className="statusbtn">
-                    <CustomButton txt="Activate" style={{width:"35vw" , margin:"10px" , fontSize: "20px"}}/>
+                    <CustomButton txt="Activate" style={{width:"30vw" , margin:"10px" , fontSize: "20px"}}/>
                 </div>
                 <div className="statusbtn">
-                    <CustomButton txt="Deactivate" style={{width:"35vw" , margin:"10px" , fontSize: "20px"}}/>
+                    <CustomButton txt="Deactivate" style={{width:"30vw" , margin:"10px" , fontSize: "20px"}}/>
 
                 </div>
             </div>

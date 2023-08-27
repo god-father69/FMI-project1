@@ -1,7 +1,9 @@
 .objectiveBoxCont{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    /* width: 90%; */
+    /* margin: 20px; */
+    /* margin-right: 20px; */
 }
 
 .objectiveBoxInCont{
@@ -46,8 +48,10 @@
     flex-direction: row;
     /* align-items: flex-start; */
     justify-content: flex-start;
-    width: 100%;
-    /* position: relative;*/
+    width: 80%;
+    position: relative;
+
+    
 }
 .objbtn{
     /* position: relative; */
@@ -56,10 +60,10 @@
     flex: 0 0 25%;
     left: 0px;
     margin: 0px;
-    /* margin-right: 10px;*/
+    /* margin-right: 10px; */
 }
 .savebtnCont{
-    /* flex: 0 0 50%; */
+    flex: 0 0 50%;
     display: flex;
     flex-direction: row-reverse;
 
