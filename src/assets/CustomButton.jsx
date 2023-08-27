@@ -7,7 +7,7 @@ const CustomButton = (props) => {
       style={props.style}
       onClick= {props.onClick}
     >
-      <span className="button-text">{props.txt}</span>
+      <p style={props.style2}>{props.txt}</p>
       {/* <span className="down-chevron-icon">&#9660;</span> */}
     </button>
   );

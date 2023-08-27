@@ -37,7 +37,7 @@ function ObjectiveBox1(props) {
           <hr
             style={{
               border: "1.5px solid  #fff",
-              margin: "20px",
+              margin: "-10px 22px 9px",
               position: "relative",
               width:"82%"
             }}
