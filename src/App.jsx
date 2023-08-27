@@ -12,6 +12,7 @@ import upload from './assets/upload.svg'
 import SetObjective from './components/SetObjective'
 import ObjectiveBox1 from './components/progress/ObjectiveBox1'
 import OverallProg from './components/progress/OverallProg'
+import ScavHuntUploads01 from './components/ScavHuntUploads01'
 
 
 function App() {
@@ -19,16 +20,7 @@ function App() {
 
   return (
     <>
-      {/* <InstructorParent/> */}
-      {/* <CustomButton txt="LOGIN"/> */}
-      {/* <UploadButton backgroundImage={upload}/> */}
-      <ScavHuntLogin/>
-      {/* <ScavHuntMain />  */}
-      {/* <ScavHuntNotes /> */}
-      {/* <ScavHuntUpload /> */}
-      {/* <ScavHuntLogin/> */}
-      {/* <SetObjective/> */}
-      {/* <ObjectiveBox/> */}
+      {/* <ScavHuntLogin /> */}
     </>
   )
 }

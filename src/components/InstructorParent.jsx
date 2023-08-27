@@ -6,6 +6,7 @@ import SetObjective from './SetObjective'
 import ObjectiveBox from './ObjectiveBox'
 import ObjectiveBox1 from "./progress/ObjectiveBox1";
 import OverallProg from "./progress/OverallProg";
+import ScavHuntUploads01 from "./ScavHuntUploads01";
 export default function InstructorParent() {
     const [adminClicked, setadminClicked] = useState(0);
     const [objCount, setobjCount] = useState(1);
@@ -44,10 +45,14 @@ export default function InstructorParent() {
 
                     <hr style={{border : "2px solid  #fff" , margin : "20px" , position : "fixed" , left :"0" , right:"0" , top:"20vh" }}/>
 
-                    <ObjectiveBox1 objCount={objCount} />
+                    <ObjectiveBox1 objCount={objCount} setadminClicked={setadminClicked} />
                 </div>
             ) }
+            {
+                adminClicked==3 && <ScavHuntUploads01/>
+            }
             </div>
+            
         </div>
     );
 }

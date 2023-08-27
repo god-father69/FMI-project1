@@ -4,7 +4,7 @@ import tick from "../../assets/tick.svg";
 import cross from "../../assets/cross.svg";
 import "./obj.css";
 function ObjectiveBox1(props) {
-  const { objCount } = props;
+  const { objCount,setadminClicked } = props;
   const [objCount1,setObjCount1]=useState(1);
   useEffect(() => {
     setObjCount1(objCount);
@@ -131,6 +131,7 @@ function ObjectiveBox1(props) {
                           justifyContent: "center",
                           alignItems: "center",
                         }}
+                        onClick={()=> setadminClicked(3)}
                       >
                         upload
                       </span>
