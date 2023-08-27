@@ -28,6 +28,7 @@ function App() {
           <Route path="/upload" element={<ScavHuntUpload />} />
           <Route path="/notes" element={<ScavHuntNotes />} />
           <Route path="/progress" element={<OverallProg />} />
+          <Route path="/instructer" element={<InstructorParent/>} />
           <Route path="*" element={<ScavHuntLogin />} />
       </Routes>
     </BrowserRouter>

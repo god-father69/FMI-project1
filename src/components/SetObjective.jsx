@@ -21,7 +21,7 @@ function SetObjective(props) {
     const decrement = () => {
         if(count<=0){
             setCount(0);
-            setobjCount(1);
+            setobjCount(0);
         }
         else{
             setCount(count - 1);
@@ -33,7 +33,7 @@ function SetObjective(props) {
 
   return (
     <>
-    <hr style={{border : "1.5px solid  #fff" , margin : "20px" , position : "absolute" , left :"0" , right:"0" , top:"18vh" }}/>
+    {/* <hr style={{border : "1.5px solid  #fff" , margin : "20px" , position : "absolute" , left :"0" , right:"0" , top:"18vh" }}/> */}
       <div className="objContainer">
         <div className="innercont1">
             <div className="btnContainer">
@@ -51,7 +51,7 @@ function SetObjective(props) {
                 <p> How many objectives would you like to set?</p>
             </div>
             <div className="subincont plusicon" onClick={increment}>
-                <button className="plusbtn">
+                <button className="plusbtn" style={{color:"white"}}>
                     +
                 </button>
                 {/* <UploadButton backgroundImage={plusbtn}/> */}
@@ -62,7 +62,7 @@ function SetObjective(props) {
                 </div>
             </div>
             <div className="subincont minusicon" onClick={decrement}>
-                <button className="minusbtn">
+                <button className="minusbtn" style={{color:"white"}}>
                     -
                 </button>
                 {/* <MinusButton backgroundImage={upload}/> */}
@@ -71,9 +71,11 @@ function SetObjective(props) {
             
         </div>
         </div>
+
       </div>
-      
       <RenderObjBox count = {count}/>
+     
+
     </>
   )
 }

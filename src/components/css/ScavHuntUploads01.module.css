@@ -9,6 +9,7 @@
     flex-direction: column;
     width: 80%;
     gap: 1vh;
+    margin-top: 12em;
 }
 
 .heading {
@@ -19,11 +20,11 @@
 .textarea {
     background-color: #F3F3F3;
     border-radius: 10px;
-    height: 30vh;
+    height: 25vh;
     width: 100%;
     resize: none;
     color: #004785;
     font-weight: 500;
     font-size: 0.9rem;
-    padding: 10px;
+    padding: 0px;
 }

@@ -9,7 +9,7 @@ import OverallProg from "./progress/OverallProg";
 import ScavHuntUploads01 from "./ScavHuntUploads01";
 export default function InstructorParent() {
     const [adminClicked, setadminClicked] = useState(0);
-    const [objCount, setobjCount] = useState(1);
+    const [objCount, setobjCount] = useState(0);
     console.log(objCount,"setobjCount");
     const adminClick = (e)=>{
         console.log("hiii");
@@ -29,9 +29,10 @@ export default function InstructorParent() {
                     <CustomButton txt="PROGRESS" style={{width:"30vw" , margin:"10px" , fontSize: "20px"}} onClick = {(e)=>adminClick(2)}/>
                 </div>
             </div>
-            {/* <hr style={{border : "1.5px solid  #fff" , margin : "20px" , position : "fixed" , left :"0" , right:"0" , top:"18vh" }}/> */}
+            
             {/* {{adminClicked} && <SetObjective/>} */}
             <div className="childsss" style={{overflow : "scroll",zIndex:"-5"}}>
+            
 
             
             {
@@ -39,11 +40,12 @@ export default function InstructorParent() {
             }
     
 
-            {adminClicked==2 && (
+            {adminClicked==2 &&  (
                 <div className="progressSec" >
-                    <OverallProg/>
+                    
+                    
 
-                    <hr style={{border : "2px solid  #fff" , margin : "20px" , position : "fixed" , left :"0" , right:"0" , top:"20vh" }}/>
+                    
 
                     <ObjectiveBox1 objCount={objCount} setadminClicked={setadminClicked} />
                 </div>
