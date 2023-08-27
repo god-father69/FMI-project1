@@ -6,6 +6,8 @@ import './css/SetObjective.css'
 import plusbtn from '../assets/plus.svg'
 import minusbtn from '../assets/minus.svg'
 import upload from '../assets/upload.svg'
+import ObjectiveBox from "./ObjectiveBox";
+import RenderObjBox from "./renderObjBox"
 
 
 function SetObjective(props) {
@@ -31,6 +33,7 @@ function SetObjective(props) {
 
   return (
     <>
+    <hr style={{border : "1.5px solid  #fff" , margin : "20px" , position : "fixed" , left :"0" , right:"0" , top:"18vh" }}/>
       <div className="objContainer">
         <div className="innercont1">
             <div className="btnContainer">
@@ -65,9 +68,12 @@ function SetObjective(props) {
                 {/* <MinusButton backgroundImage={upload}/> */}
                 {/* <button style={{ backgroundImage: {plusbtn}}}></button> */}
             </div>
+            
         </div>
         </div>
       </div>
+      
+      <RenderObjBox count = {count}/>
     </>
   )
 }
