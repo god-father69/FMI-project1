@@ -4,7 +4,7 @@ import tick from "../assets/tick.svg";
 import './css/ObjectiveBox.css'
 
 
-function ObjectiveBox() {
+function ObjectiveBox(props) {
   const [text, setText] = useState("Initial text");
   const [isEditing, setIsEditing] = useState(true);
 
@@ -27,7 +27,7 @@ function ObjectiveBox() {
     <>
       <div className="objectiveBoxCont">
         <div className="objHeading objectiveBoxInCont">
-            <p className='objheadingtext'>Objective</p>
+            <p className='objheadingtext'>Objective {props.count}</p>
         </div>
         <div className="objTextBox objectiveBoxInCont">
             {/* <textarea class="objtextboxArea"></textarea> */}
