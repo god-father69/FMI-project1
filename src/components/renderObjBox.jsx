@@ -6,7 +6,7 @@ import "./css/renderObjBox.css"
 function renderObjBox(props) {
     const items = [] 
     for(let i=0;i< props.count ; i++){
-        items.push(<ObjectiveBox/>)
+        items.push(<ObjectiveBox count={i+1}/>)
     }
 
   return (
