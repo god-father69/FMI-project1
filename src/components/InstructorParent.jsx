@@ -8,7 +8,7 @@ import ObjectiveBox1 from "./progress/ObjectiveBox1";
 import OverallProg from "./progress/OverallProg";
 import ScavHuntUploads01 from "./ScavHuntUploads01";
 export default function InstructorParent() {
-  const [adminClicked, setadminClicked] = useState(0);
+  const [adminClicked, setadminClicked] = useState(2);
   const [objCount, setobjCount] = useState(0);
   console.log(objCount, "setobjCount");
   const adminClick = (e) => {
@@ -16,7 +16,7 @@ export default function InstructorParent() {
     setadminClicked(e);
   };
   return (
-    <div style={{ background: "#004785" }}>
+    <div style={{ background: "#004785" ,overflowX:"hidden"}}>
       <div
         className="mainPageContent"
         style={{ position: "fixed", zIndex: "100", background: "#004785" }}
@@ -49,7 +49,7 @@ export default function InstructorParent() {
       </div>
 
       {/* {{adminClicked} && <SetObjective/>} */}
-      <div className="childsss" style={{ overflow: "scroll", zIndex: "-5" }}>
+      <div className="childsss" style={{ overflow: "scroll", zIndex: "-5" ,overflowY:"hidden"}}>
         {adminClicked == 1 && (
           <>
             <hr

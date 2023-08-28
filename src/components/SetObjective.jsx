@@ -34,7 +34,7 @@ function SetObjective(props) {
   return (
     <>
     {/* <hr style={{border : "1.5px solid  #fff" , margin : "20px" , position : "absolute" , left :"0" , right:"0" , top:"18vh" }}/> */}
-      <div className="objContainer">
+      <div className="objContainer" >
         <div className="innercont1">
             <div className="btnContainer">
                 <div className="statusbtn">
